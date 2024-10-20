@@ -4,6 +4,16 @@
   become: true
 
   tasks:
-  - name: install htop
+  - name: install packages
     package:
-      name: htop
+      name:
+        - tillix
+        - vim
+        - zsh
+
+  - name: .zshrc file
+    copy:
+      src: files/zshrc
+      dest: ~/.zshrc
+      owner: <hostname>
+      group: <hostname>
