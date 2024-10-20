@@ -1,2 +1,1 @@
-# ansible-vms
-ansible to manage my vms
+# Basic anisble playbook for managing vms
