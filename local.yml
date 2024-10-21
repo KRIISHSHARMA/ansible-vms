@@ -10,6 +10,13 @@
         - tillix
         - vim
         - zsh
+  
+  - name: Install Oh My Zsh
+    become: false
+    shell: |
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    args:
+      executable: /bin/bash
 
   - name: .zshrc file
     copy:
